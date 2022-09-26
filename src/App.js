@@ -1,7 +1,9 @@
-import logo from "./logo.svg";
 import "./App.css";
+import List from "./components/List";
+import Search from "./components/Search";
 
 const title = "React";
+
 //const welcome = { title: "React", greeting: "Hey" };
 
 //function getTitle(title) {
@@ -14,8 +16,9 @@ function App() {
       <h1>Hello {title}</h1>
       {/*<h1>{welcome.greeting}, {welcome.title}</h1>*/}
       {/*<h1>Hello {getTitle("React")}</h1>*/}
-      <label htmlFor="search">Search: </label>
-      <input id="search" type="text" />
+      <Search />
+      <hr />
+      <List />
     </div>
   );
 }
